@@ -7,8 +7,10 @@ import { UserModel } from '../../models/user-model';
   templateUrl: './getall.component.html',
   styleUrl: './getall.component.scss'
 })
+
 export class GetallComponent implements OnInit {
 users!: UserModel[];
+
 constructor(private crudService:CrudService){}
   ngOnInit(): void {
       this.getAllUsers();
